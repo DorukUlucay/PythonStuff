@@ -1,16 +1,24 @@
 import tree
 
-Tree = tree.Tree()
+#initialize tree
+myTree = tree.Tree()
 
-Tree.Add('branch one')
-Tree.Branches[0].Add('branch of branch one')
-Tree.Add('branch two')
-Tree.Branches[1].Add('first sub branch of branch two')
-Tree.Branches[1].Branches[0].Add('first sub branch of sub branch of branch two')
-Tree.Branches[1].Branches[0].Add('second sub branch of sub branch of branch two')
-Tree.Branches[1].Branches[0].Add('third sub branch of sub branch of branch two')
-Tree.Branches[1].Add('second sub branch of branch two')
+#add a branch
+myTree.Add('Food')
 
-Tree.PrintTree(None)
+#add branches to the branch above
+myTree.Branches[0].Add('Fruit')
+myTree.Branches[0].Add('Vegetable')
+myTree.Branches[0].Add('Meat')
 
-Tree.FindBranchByName(None, 'Tkinter')
+#add a subbranch
+myTree.Branches[0].Branches[0].Add('Red')
+
+#and another subbranch to one above
+myTree.Branches[0].Branches[0].Branches[0].Add('Apple')
+
+#find branch by name and add it a subbranch
+myTree.FindBranchByName(None, 'Red').Add('Raspberry')
+
+#print the tree
+myTree.PrintTree(None)
