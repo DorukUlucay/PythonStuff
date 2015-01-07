@@ -23,13 +23,13 @@ class Tree:
     def PrintTree(self, branch):
         if(branch==None):
             for x in self.Branches:
-                print '-'*self.level + x.Description
+                print('-'*self.level + x.Description)
                 self.level = self.level + 1
                 self.PrintTree(x)
                 self.level = self.level - 1
         else:
             for x in branch.Branches:
-                print '-'*self.level + x.Description
+                print('-'*self.level + x.Description)
                 self.level = self.level + 1
                 self.PrintTree(x)
                 self.level = self.level - 1
