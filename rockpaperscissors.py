@@ -42,11 +42,11 @@ def process(a):
 def showStat():
     print "{0}: {1} CPU: {2} Draws:{3}".format(name, str(playerScore), str(cpuScore), str(draw))
 
-name=raw_input("welcome to rock-paper-scissors. what is your name ?")
+name=input("welcome to rock-paper-scissors. what is your name ?")
 print("welcome again, "+ name+". you can type q to quit or stat to see the score during the game.")
         
 while(True):
-    a = str.lower(raw_input("(r)ock, (p)aper or (s)cissors ?"))
+    a = str.lower(input("(r)ock, (p)aper or (s)cissors ?"))
     if(a=='q'):
         quit()
     if(a=='stat'):
