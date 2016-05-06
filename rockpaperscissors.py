@@ -40,7 +40,7 @@ def process(a):
     compare(a)
 
 def showStat():
-    print ("{0}: {1} CPU: {2} Draws:{3}").format(name, str(playerScore), str(cpuScore), str(draw))
+    print ("{0}: {1} CPU: {2} Draws:{3}".format(name, str(playerScore), str(cpuScore), str(draw)))
 
 name=input("welcome to rock-paper-scissors. what is your name ?")
 print("welcome again, "+ name+". you can type q to quit or stat to see the score during the game.")
