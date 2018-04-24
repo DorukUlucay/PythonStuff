@@ -1,0 +1,33 @@
+<div class="container">
+
+	<h4>Report Work Here:</h4>
+
+
+	<div>
+		<div>Who did it</div>
+
+		<div>
+			<select ng-model="user">
+				<option ng-repeat="user in users">{{user}}</option>
+			</select>
+
+		</div>
+	</div>
+
+	<div>
+		<div>Did what</div>
+
+		<div>
+			<select ng-change="getSubtypes()" ng-model="workType" ng-options="key as value for (key , value) in workTypes.data"></select>
+
+
+		</div>
+
+
+		<div>
+			<select ng-model="subType" ng-options="key as value for (key , value) in workSubTypes.data"></select>
+		</div>
+	</div>
+
+
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+
+<h4>Tell us how was your day</h4>
+
+<p>
+  How was your day ?
+
+<div ng-repeat="(key, value) in mood">
+
+      <input type="radio" name="mood" value="{{key}}" ng-model="report.mood">{{value}}<br>
+  </div>
+
+</p>
+
+<p>
+Why?(optional)
+  <div>
+    <textarea ng-model="report.reason"></textarea>
+  </div>
+</p>
+
+<input type="button" ng-click="send()" value="Send" />
+
+</div>
